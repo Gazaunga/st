@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "mono:pixelsize=14:antialias=true:autohint=true";
+static char font[] = "SanFranciscoText-Regular:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -16,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char shell[] = "/bin/sh";
+static char shell[] = "/usr/bin/xonsh";
 static char *utmp = NULL;
 static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -80,7 +80,7 @@ static char termname[] = "st-256color";
  *
  *	stty tabs
  */
-static unsigned int tabspaces = 8;
+static unsigned int tabspaces = 2;
 
 /* bg opacity */
 static const int alpha = 0xdd;
@@ -145,7 +145,7 @@ static unsigned int defaultrcs = 15;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 7;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
@@ -157,7 +157,7 @@ static unsigned int rows = 24;
 /*
  * Default colour and shape of the mouse cursor
  */
-static unsigned int mouseshape = XC_xterm;
+static unsigned int mouseshape = XC_left_ptr;
 static unsigned int mousefg = 7;
 static unsigned int mousebg = 0;
 
